@@ -45,7 +45,7 @@ class Lda_model:
         """ Init object, load df, load stop_words
         Return None """
         #-------------------------------------------------------       
-        self.df = pd.DataFrame(requests.get('http://127.0.0.1:8000/data/').json())
+        self.df = pd.DataFrame(requests.get('https://safe-sierra-02925.herokuapp.com/data/').json())
         self.stop_words = stop_words
     
 
